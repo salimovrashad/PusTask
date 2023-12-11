@@ -1,15 +1,15 @@
-﻿using PustokMVC.Models;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.Drawing;
 
 namespace PustokMVC.ViewModels.ProductVM
 {
-    public class ProductListItemVM
+    public class ProductUpdateItemVM
     {
-        public int Id { get; set; }
         [MaxLength(64)]
         public string Name { get; set; }
+        [MaxLength(128)]
+        public string? About { get; set; }
+        public string? Description { get; set; }
         [Column(TypeName = "smallmoney")]
         public decimal SellPrice { get; set; }
         [Column(TypeName = "smallmoney")]
@@ -17,10 +17,8 @@ namespace PustokMVC.ViewModels.ProductVM
         [Range(0, 100)]
         public float Discount { get; set; }
         public ushort Quantity { get; set; }
-        public string ImageUrl { get; set; }
-        public IFormFile ImageFile { get; set; }
-        public Category? Category { get; set; }
-        public bool IsDeleted { get; set; }
-        public IEnumerable<Color> Colors { get; set; }
+        public string? ImageUrl { get; set; }
+        public IFormFile? ImageFile { get; set; }
+        public int CategoryId { get; set; }
     }
 }

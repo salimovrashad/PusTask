@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using PustokMVC.Context;
 using PustokMVC.Helpers;
 using PustokMVC.Models;
+using PustokMVC.ViewModels.CategoryVM;
 using PustokMVC.ViewModels.ProductVM;
 
 namespace PustokMVC.Areas.Admin.Controllers
@@ -67,6 +68,43 @@ namespace PustokMVC.Areas.Admin.Controllers
         {
             var data = await _db.Products.FindAsync(id);
             _db.Products.Remove(data);
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> Update(int id)
+        {
+            ViewBag.Categories = _db.Categories;
+            var item = await _db.Products.FindAsync(id);
+
+            return View(new ProductUpdateItemVM
+            {
+                Name = item.Name,
+                Description = item.Description,
+                Discount = item.Discount,
+                SellPrice = item.SellPrice,
+                About = item.About,
+                CategoryId = item.CategoryId,
+                CostPrice = item.CostPrice,
+                Quantity= item.Quantity,
+                ImageUrl = item.ImageUrl
+            });
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> Update(ProductUpdateItemVM vm, int id) 
+        {
+            var item = await _db.Products.FindAsync(id);
+            item.Name = vm.Name;
+            item.Description = vm.Description;
+            item.Discount = vm.Discount;
+            item.SellPrice = vm.SellPrice;
+            item.About = vm.About;
+            item.CategoryId = vm.CategoryId;
+            item.CostPrice = vm.CostPrice;
+            item.Quantity = vm.Quantity;
+            item.ImageUrl = await vm.ImageFile.SaveAsync(PathConstants.Product);
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

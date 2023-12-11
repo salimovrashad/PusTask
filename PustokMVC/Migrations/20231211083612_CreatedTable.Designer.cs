@@ -11,8 +11,8 @@ using PustokMVC.Context;
 namespace PustokMVC.Migrations
 {
     [DbContext(typeof(PustokDBContext))]
-    [Migration("20231210201208_CreatedProductTable")]
-    partial class CreatedProductTable
+    [Migration("20231211083612_CreatedTable")]
+    partial class CreatedTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

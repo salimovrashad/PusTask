@@ -48,5 +48,25 @@ namespace PustokMVC.Areas.Admin.Controllers
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> Update(int id) 
+        {
+            var item = await _db.Categories.FindAsync(id);
+
+            return View(new CategoryUpdateItem 
+            { 
+                Name = item.Name
+            });
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> Update(int id, CategoryUpdateItem vm) 
+        {
+            var item = _db.Categories.Find(id);
+            item.Name = vm.Name;
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
