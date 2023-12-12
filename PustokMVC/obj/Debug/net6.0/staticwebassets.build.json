@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CPFJUOPXcZEmMYu2DlCGzS05BP3y+/XnNpLqJQsNTqw=",
+  "Hash": "I96k5zl6xyOzWFGM5LzU+iZW7T7GLYV2Am2cgU0DaRo=",
   "Source": "PustokMVC",
   "BasePath": "_content/PustokMVC",
   "Mode": "Default",
@@ -32912,6 +32912,40 @@
       "OriginalItemSpec": "wwwroot\\image\\others\\home-side-promo.jpg"
     },
     {
+      "Identity": "C:\\Users\\Birinci Novbe\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\2ujd2j4k.bm1product-3.jpg",
+      "SourceId": "PustokMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Birinci Novbe\\Desktop\\PusTask\\PustokMVC\\wwwroot\\",
+      "BasePath": "_content/PustokMVC",
+      "RelativePath": "image/products/2ujd2j4k.bm1product-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\products\\2ujd2j4k.bm1product-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Birinci Novbe\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\44o4p4k2.m1wproduct-9.jpg",
+      "SourceId": "PustokMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Birinci Novbe\\Desktop\\PusTask\\PustokMVC\\wwwroot\\",
+      "BasePath": "_content/PustokMVC",
+      "RelativePath": "image/products/44o4p4k2.m1wproduct-9.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\products\\44o4p4k2.m1wproduct-9.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Birinci Novbe\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\4i24ph2q.h2wcart-product-1.jpg",
       "SourceId": "PustokMVC",
       "SourceType": "Discovered",
@@ -32927,6 +32961,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\products\\4i24ph2q.h2wcart-product-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Birinci Novbe\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\5mbbtuic.05hproduct-details-3.jpg",
+      "SourceId": "PustokMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Birinci Novbe\\Desktop\\PusTask\\PustokMVC\\wwwroot\\",
+      "BasePath": "_content/PustokMVC",
+      "RelativePath": "image/products/5mbbtuic.05hproduct-details-3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\products\\5mbbtuic.05hproduct-details-3.jpg"
     },
     {
       "Identity": "C:\\Users\\Birinci Novbe\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\cart-product-1.jpg",
@@ -32961,6 +33012,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\products\\mkanc4ku.sig55592-3-gallery-free-hq-image.png"
+    },
+    {
+      "Identity": "C:\\Users\\Birinci Novbe\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\ny3v5kbc.54fproduct-8.jpg",
+      "SourceId": "PustokMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Birinci Novbe\\Desktop\\PusTask\\PustokMVC\\wwwroot\\",
+      "BasePath": "_content/PustokMVC",
+      "RelativePath": "image/products/ny3v5kbc.54fproduct-8.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\products\\ny3v5kbc.54fproduct-8.jpg"
     },
     {
       "Identity": "C:\\Users\\Birinci Novbe\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\product-1.jpg",

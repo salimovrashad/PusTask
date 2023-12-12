@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PustokMVC.Context;
 
@@ -10,9 +11,10 @@ using PustokMVC.Context;
 namespace PustokMVC.Migrations
 {
     [DbContext(typeof(PustokDBContext))]
-    partial class PustokDBContextModelSnapshot : ModelSnapshot
+    [Migration("20231212083253_CreatedTagTable")]
+    partial class CreatedTagTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,7 +41,7 @@ namespace PustokMVC.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Blogs");
+                    b.ToTable("Blog");
                 });
 
             modelBuilder.Entity("PustokMVC.Models.BlogTag", b =>
@@ -49,6 +51,9 @@ namespace PustokMVC.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("AuthorId")
+                        .HasColumnType("int");
 
                     b.Property<int>("BlogId")
                         .HasColumnType("int");

@@ -90,7 +90,7 @@ namespace PustokMVC.Areas.Admin.Controllers
                 ImageUrl = item.ImageUrl
             });
         }
-
+        
         [HttpPost]
 
         public async Task<IActionResult> Update(ProductUpdateItemVM vm, int id) 
