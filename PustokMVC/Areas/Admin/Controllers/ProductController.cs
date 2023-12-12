@@ -68,6 +68,10 @@ namespace PustokMVC.Areas.Admin.Controllers
         {
             var data = await _db.Products.FindAsync(id);
             _db.Products.Remove(data);
+
+            string fullPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", data.ImageUrl);
+            System.IO.File.Delete(fullPath);
+            
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
