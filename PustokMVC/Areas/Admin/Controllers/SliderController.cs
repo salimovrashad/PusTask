@@ -41,7 +41,12 @@ namespace PustokMVC.Areas.Admin.Controllers
             {
                 Description = item.Description,
                 ImageUrl = item.ImageUrl,
-                IsLeft = item.IsLeft,
+                IsLeft = item.Position switch
+                {
+                    0 => null,
+                    -1 => true,
+                    1 => false
+                },
                 Title = item.Title,
             };
             await _db.Sliders.AddAsync(slider);
@@ -56,7 +61,12 @@ namespace PustokMVC.Areas.Admin.Controllers
             {
                 Description = item.Description,
                 ImageUrl = item.ImageUrl,
-                IsLeft = item.IsLeft,
+                Position = item.IsLeft switch
+                {
+                    true => -1,
+                    null => 0,
+                    false => 1
+                },
                 Title = item.Title,
             });
         }
@@ -67,7 +77,12 @@ namespace PustokMVC.Areas.Admin.Controllers
         {
             var data = await _db.Sliders.FindAsync(id);
             data.Title = vm.Title;
-            data.IsLeft = vm.IsLeft;
+            data.IsLeft = vm.Position switch
+            {
+                0 => null,
+                -1 => true,
+                1 => false
+            };
             data.ImageUrl = vm.ImageUrl;
             data.Description = vm.Description;
             await _db.SaveChangesAsync();

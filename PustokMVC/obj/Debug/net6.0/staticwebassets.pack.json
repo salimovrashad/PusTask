@@ -7741,8 +7741,24 @@
       "PackagePath": "staticwebassets\\image\\others\\home-side-promo.jpg"
     },
     {
+      "Id": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\begp2te5.iiwblog_post_3.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\begp2te5.iiwblog_post_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\bxcfla0z.e32element_rev_1.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\bxcfla0z.e32element_rev_1.jpg"
+    },
+    {
       "Id": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\cart-product-1.jpg",
       "PackagePath": "staticwebassets\\image\\products\\cart-product-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\e02rgzp4.j4melement_rev_4.png",
+      "PackagePath": "staticwebassets\\image\\products\\e02rgzp4.j4melement_rev_4.png"
+    },
+    {
+      "Id": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\kclvvht0.l20bg-colors.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\kclvvht0.l20bg-colors.jpg"
     },
     {
       "Id": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\product-1.jpg",
@@ -7815,6 +7831,14 @@
     {
       "Id": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\product-details-5.jpg",
       "PackagePath": "staticwebassets\\image\\products\\product-details-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\q111aqcw.rqaelement_rev_2.png",
+      "PackagePath": "staticwebassets\\image\\products\\q111aqcw.rqaelement_rev_2.png"
+    },
+    {
+      "Id": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\wwwroot\\image\\products\\xjh3fflm.msnelement_rev_1.jpg",
+      "PackagePath": "staticwebassets\\image\\products\\xjh3fflm.msnelement_rev_1.jpg"
     },
     {
       "Id": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\wwwroot\\js\\ajax-mail.js",

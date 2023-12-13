@@ -1,6 +1,34 @@
-﻿@model List<ProductListItemVM>
+﻿@model HomeVM
 @{
     ViewData["Title"] = "Index";
+}
+@section scripts{
+    <script>
+        $("#prod-pag a").click(function(ev){
+            ev.preventDefault();
+            var url = $(this).attr("href")
+            var html = "";
+            fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    data.forEach(item => {
+                    html += `   <tr>
+                                    <td>${item.id}</td>
+                                    <td>${item.name}</td>
+                                    <td>${item.category}</td>
+                                    <td><img width="80" src="/${item.imageUrl}" />
+                                    </td>
+                                    <td>${item.costPrice}</td>
+                                    <td class="text-center"><a class="btn btn-outline-info" asp-action="Update" asp-route-id="${item.id}">Update</a></td>
+                                    <td class="text-center"><a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="${item.id}">Delete</a></td>
+                                </tr>`
+                    })
+                return html;
+                })
+                .then(data => $(".pag-prods").html(data))
+        })
+        
+    </script>
 }
 
 <div class="card shadow mb-4">
@@ -19,8 +47,8 @@
                 <th>CostPrice</th>
                 <th colspan="2">Action</th>
                 </thead>
-                <tbody>
-                    @foreach (var item in Model ?? new List<ProductListItemVM>())
+                <tbody class="pag-prods">
+                    @foreach (var item in Model.PaginatedProducts.Items ?? new List<ProductListItemVM>())
                     {
                         <tr>
                             <td>@item.Id</td>
@@ -43,6 +71,16 @@
                     }
                 </tbody>
             </table>
+                <nav aria-label="Page navigation example">
+                    <ul id="prod-pag" class="pagination">
+                        <li class="page-item @(Model.PaginatedProducts.HasPrev ? "" : "disabled")"><a class="page-link" asp-action="ProductPagination" asp-route-page="@Model.PaginatedProducts.CurrentPage - 1">Previous</a></li>
+                        @for(int i = 1; i<=Model.PaginatedProducts.LastPage; i++)
+                        {
+                            <li class="page-item @(i == Model.PaginatedProducts.CurrentPage ? "active" : "")"><a class="page-link" asp-action="ProductPagination" asp-route-page="@i">@i</a></li>
+                        }
+                        <li class="page-item @(Model.PaginatedProducts.HasNext ? "" : "disabled")"><a class="page-link" asp-action="ProductPagination" asp-route-page="@Model.PaginatedProducts.CurrentPage + 1">Next</a></li>
+                    </ul>
+                </nav>
         </div>
     </div>
 </div>

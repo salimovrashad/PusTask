@@ -5,7 +5,10 @@ using PustokMVC.Context;
 using PustokMVC.Helpers;
 using PustokMVC.Models;
 using PustokMVC.ViewModels.CategoryVM;
+using PustokMVC.ViewModels.CommonVM;
+using PustokMVC.ViewModels.HomeVM;
 using PustokMVC.ViewModels.ProductVM;
+using PustokMVC.ViewModels.SliderVM;
 
 namespace PustokMVC.Areas.Admin.Controllers
 {
@@ -21,20 +24,35 @@ namespace PustokMVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var item = await _db.Products.Select(p => new ProductListItemVM
+            var items = _db.Products.Where(p => !p.IsDeleted).Take(2).Select(p => new ProductListItemVM
             {
                 Id = p.Id,
-                Name = p.Name,
+                Category = p.Category,
                 Discount = p.Discount,
-                IsDeleted = p.IsDeleted,
-                CostPrice = p.CostPrice,
+                Name = p.Name,
                 ImageUrl = p.ImageUrl,
                 Quantity = p.Quantity,
                 SellPrice = p.SellPrice,
-                Category = p.Category
-
-            }).ToListAsync();
-            return View(item);
+                CostPrice = p.CostPrice,
+            });
+            int count = await _db.Products.CountAsync(x=>!x.IsDeleted);
+            PaginationVM<IEnumerable<ProductListItemVM>> pag = new(count, 1, (int)Math.Ceiling((decimal)count/2), items);
+            HomeVM vm = new HomeVM
+            {
+                Products = await _db.Products.Where(p => !p.IsDeleted).Select(p => new ProductListItemVM
+                {
+                    Id = p.Id,
+                    Category = p.Category,
+                    Discount = p.Discount,
+                    Name = p.Name,
+                    ImageUrl = p.ImageUrl,
+                    Quantity = p.Quantity,
+                    SellPrice = p.SellPrice,
+                    CostPrice = p.CostPrice,
+                }).ToListAsync(),
+                PaginatedProducts = pag
+            };
+            return View(vm);
         }
 
         public IActionResult Create()
@@ -111,6 +129,12 @@ namespace PustokMVC.Areas.Admin.Controllers
             item.ImageUrl = await vm.ImageFile.SaveAsync(PathConstants.Product);
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> ProductPagination(int page = 1, int count = 2)
+        {
+            var datas = await _db.Products.Where(p=>!p.IsDeleted).Skip((page-1)*count).Take(count).ToListAsync();
+            return Json(datas);
         }
     }
 }
