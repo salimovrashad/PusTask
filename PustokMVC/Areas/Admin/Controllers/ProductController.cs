@@ -37,22 +37,7 @@ namespace PustokMVC.Areas.Admin.Controllers
             });
             int count = await _db.Products.CountAsync(x=>!x.IsDeleted);
             PaginationVM<IEnumerable<ProductListItemVM>> pag = new(count, 1, (int)Math.Ceiling((decimal)count/2), items);
-            HomeVM vm = new HomeVM
-            {
-                Products = await _db.Products.Where(p => !p.IsDeleted).Select(p => new ProductListItemVM
-                {
-                    Id = p.Id,
-                    Category = p.Category,
-                    Discount = p.Discount,
-                    Name = p.Name,
-                    ImageUrl = p.ImageUrl,
-                    Quantity = p.Quantity,
-                    SellPrice = p.SellPrice,
-                    CostPrice = p.CostPrice,
-                }).ToListAsync(),
-                PaginatedProducts = pag
-            };
-            return View(vm);
+            return View();
         }
 
         public IActionResult Create()

@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<PustokDBContext>(options => { options.UseSqlServer(builder.Configuration.GetConnectionString("MSSql")); });
 
+builder.Services.AddScoped<LayoutService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

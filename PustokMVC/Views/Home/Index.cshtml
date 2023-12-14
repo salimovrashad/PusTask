@@ -6,42 +6,9 @@
 <!--=================================
 Hero Area
 ===================================== -->
-<section class="hero-area hero-slider-1">
-    <div class="sb-slick-slider" data-slick-setting='{
-                            "autoplay": true,
-                            "fade": true,
-                            "autoplaySpeed": 3000,
-                            "speed": 3000,
-                            "slidesToShow": 1,
-                            "dots":true
-                            }'>
-        @foreach (var slider in Model.Sliders)
-        {
-        <div class="single-slide bg-shade-whisper  ">
-            <div class="container">
-                <div class="home-content text-center text-sm-center position-relative">
-                    <div class="hero-partial-image @(slider.IsLeft == true ? "image-right" : slider.IsLeft == false ? "image-left" : "image-right") ">
-                        <img src="@slider.ImageUrl" alt="photo">
-                    </div>
-                        <div class="row no-gutters d-flex @(slider.IsLeft == true ? "justify-content-start" : slider.IsLeft == false ? "justify-content-end" : "justify-content-start")">
-                        <div class="col-xl-6 col-md-6 col-sm-7">
-                            <div class="home-content-inner content-left-side">
-                                <h1>
-                                    @slider.Title
-                                </h1>
-                                <h2>@slider.Description</h2>
-                                <a href="shop-grid.html" class="btn btn-outlined--primary">
-                                    $78.09 - Order Now!
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        }
-    </div>
-</section>
+
+@await Component.InvokeAsync("Slider")
+
 <!--=================================
 Home Features Section
 ===================================== -->
@@ -160,53 +127,7 @@ Home Slider Tab
                             {"breakpoint":480, "settings": {"slidesToShow": 1} },
                             {"breakpoint":320, "settings": {"slidesToShow": 1} }
                         ]'>
-                        @foreach(var item in Model.Products)
-                        {
-                            <div class="single-slide">
-                            <div class="product-card">
-                                <div class="product-header">
-                                    <a href="#" class="author">
-                                        @item.Category.Name
-                                    </a>
-                                    <h3>
-                                        <a href="product-details.html">
-                                            @item.Name
-                                        </a>
-                                    </h3>
-                                </div>
-                                <div class="product-card--body">
-                                    <div class="card-image">
-                                        <img width="100" src="@item.ImageUrl" alt="">
-                                        <div class="hover-contents">
-                                            <a href="product-details.html" class="hover-image">
-                                                <img src="@item.ImageUrl" alt="">
-                                            </a>
-                                            <div class="hover-btns">
-                                                <a href="cart.html" class="single-btn">
-                                                    <i class="fas fa-shopping-basket"></i>
-                                                </a>
-                                                <a href="wishlist.html" class="single-btn">
-                                                    <i class="fas fa-heart"></i>
-                                                </a>
-                                                <a href="compare.html" class="single-btn">
-                                                    <i class="fas fa-random"></i>
-                                                </a>
-                                                <a href="#" data-toggle="modal" data-target="#quickModal"
-                                                   class="single-btn">
-                                                    <i class="fas fa-eye"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="price-block">
-                                        <span class="price">£51.20</span>
-                                        <del class="price-old">£51.20</del>
-                                        <span class="price-discount">20%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        }
+                        @await Component.InvokeAsync("Product")
                         
                     </div>
                 </div>
