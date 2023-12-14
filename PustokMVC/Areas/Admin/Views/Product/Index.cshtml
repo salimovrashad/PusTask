@@ -8,14 +8,15 @@
             ev.preventDefault();
             var url = $(this).attr("href")
             var html = "";
-            fetch(url)
+            $.ajax(url)
                 .then(res => res.json())
                 .then(data => {
+                    type:"POST"
                     data.forEach(item => {
                     html += `   <tr>
                                     <td>${item.id}</td>
                                     <td>${item.name}</td>
-                                    <td>${item.category}</td>
+                                    <td>${item.category.name}</td>
                                     <td><img width="80" src="/${item.imageUrl}" />
                                     </td>
                                     <td>${item.costPrice}</td>
@@ -73,12 +74,12 @@
             </table>
                 <nav aria-label="Page navigation example">
                     <ul id="prod-pag" class="pagination">
-                        <li class="page-item @(Model.PaginatedProducts.HasPrev ? "" : "disabled")"><a class="page-link" asp-action="ProductPagination" asp-route-page="@Model.PaginatedProducts.CurrentPage - 1">Previous</a></li>
+                        <li class="page-item @(Model.PaginatedProducts.HasPrev ? "" : "disabled")"><a class="page-link" asp-action="ProductPagination" asp-route-page="@Model.PaginatedProducts.CurrentPage - 1" asp-route-count="2">Previous</a></li>
                         @for(int i = 1; i<=Model.PaginatedProducts.LastPage; i++)
                         {
-                            <li class="page-item @(i == Model.PaginatedProducts.CurrentPage ? "active" : "")"><a class="page-link" asp-action="ProductPagination" asp-route-page="@i">@i</a></li>
+                        <li class="page-item @(i == Model.PaginatedProducts.CurrentPage ? "active" : "")"><a class="page-link" asp-action="ProductPagination" asp-route-page="@i" asp-route-count="2">@i</a></li>
                         }
-                        <li class="page-item @(Model.PaginatedProducts.HasNext ? "" : "disabled")"><a class="page-link" asp-action="ProductPagination" asp-route-page="@Model.PaginatedProducts.CurrentPage + 1">Next</a></li>
+                    <li class="page-item @(Model.PaginatedProducts.HasNext ? "" : "disabled")"><a class="page-link" asp-action="ProductPagination" asp-route-page="@Model.PaginatedProducts.CurrentPage + 1" asp-route-count="2">Next</a></li>
                     </ul>
                 </nav>
         </div>
