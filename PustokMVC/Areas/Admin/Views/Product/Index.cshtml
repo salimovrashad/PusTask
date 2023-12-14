@@ -8,10 +8,10 @@
             ev.preventDefault();
             var url = $(this).attr("href")
             var html = "";
-            $.ajax(url)
+            fetch(url)
                 .then(res => res.json())
                 .then(data => {
-                    type:"POST"
+                    type:"POST",
                     data.forEach(item => {
                     html += `   <tr>
                                     <td>${item.id}</td>

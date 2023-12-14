@@ -133,7 +133,17 @@ namespace PustokMVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> ProductPagination(int page = 1, int count = 2)
         {
-            var datas = await _db.Products.Where(p=>!p.IsDeleted).Include(p=>p.Category).Skip((page-1)*count).Take(count).ToListAsync();
+            var datas = await _db.Products.Select(p=>new ProductListItemVM 
+            {
+                Id = p.Id,
+                Category = p.Category,
+                Discount = p.Discount,
+                Name = p.Name,
+                ImageUrl = p.ImageUrl,
+                Quantity = p.Quantity,
+                SellPrice = p.SellPrice,
+                CostPrice = p.CostPrice,
+            }).Skip((page-1)*count).Take(count).ToListAsync();
             return Json(datas);
         }
     }
