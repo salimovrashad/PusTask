@@ -146,5 +146,7 @@ namespace PustokMVC.Areas.Admin.Controllers
             }).Skip((page-1)*count).Take(count).ToListAsync();
             return Json(datas);
         }
+
+        
     }
 }
