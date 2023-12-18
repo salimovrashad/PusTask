@@ -20,8 +20,8 @@
                                     <td><img width="80" src="/${item.imageUrl}" />
                                     </td>
                                     <td>${item.costPrice}</td>
-                                    <td class="text-center"><a class="btn btn-outline-info" asp-action="Update" asp-route-id="${item.id}">Update</a></td>
-                                    <td class="text-center"><a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="${item.id}">Delete</a></td>
+                                            <td class="text-center"><a class="btn btn-outline-info" href="Product/Update/${item.id}">Update</a></td>
+                                            <td class="text-center"><a class="btn btn-outline-danger" href="Product/Delete/${item.id}">Delete</a></td>
                                 </tr>`
                     })
                 return html;

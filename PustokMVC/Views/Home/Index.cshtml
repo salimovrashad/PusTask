@@ -16,6 +16,16 @@
                     }
                 })
         })
+        $("body").on("click", ".cross-btn", function (ev) {
+            ev.preventDefault();
+            fetch($(this).attr("href"))
+                .then(res => {
+                    if (res.ok == true) {
+                        location.reload();
+                        alert("deleted")
+                    }
+                })
+        })
     </script>
 }
 <!--=================================

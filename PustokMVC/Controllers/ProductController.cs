@@ -29,6 +29,17 @@ namespace PustokMVC.Controllers
             HttpContext.Response.Cookies.Append("basket", JsonConvert.SerializeObject(basket));
             return Ok();
         }
+        public async Task<IActionResult> RemoveBasket(int? id)
+        {
+            var basket = JsonConvert.DeserializeObject<List<BasketProductAndCountVM>>(HttpContext.Request.Cookies["basket"] ?? "[]");
+            var existItem = basket.Find(b => b.Id == id);
+            if (existItem != null)
+            {
+                basket.Remove(existItem);
+            }
+            HttpContext.Response.Cookies.Append("basket", JsonConvert.SerializeObject(basket));
+            return Ok();
+        }
     }
     
 }

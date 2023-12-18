@@ -27,7 +27,7 @@ namespace PustokMVC.ViewComponents
                     Count = items.FirstOrDefault(x => x.Id == item.Id).Count,
                     Discount = item.Discount,
                     ImageUrl = item.ImageUrl,
-                    Price = (float)item.SellPrice
+                    Price = (float)item.CostPrice
                 });
             }
             return View(basketItems);

@@ -9,7 +9,7 @@
             Shopping Cart
         </span>
         <span class="price">
-            £0.00
+            £@Model.Sum(x=>x.Count * x.Price)
             <i class="fas fa-chevron-down"></i>
         </span>
     </div>
@@ -27,8 +27,8 @@
                                 @item.Name
                             </a>
                         </h3>
-                        <p class="price"><span class="qty">@item.Count ×</span> £87.34</p>
-                        <button class="cross-btn"><i class="fas fa-times"></i></button>
+                        <p class="price"><span class="qty">@item.Count ×</span> £@item.Price</p>
+                        <a asp-action="RemoveBasket" asp-controller="Product" asp-route-id="@item.Id" class="cross-btn"><i class="fas fa-times"></i></a>
                     </div>
                 </div>
             }
