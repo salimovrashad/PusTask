@@ -9,109 +9,109 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PustokMVC
 build_property.RootNamespace = PustokMVC
-build_property.ProjectDir = C:\Users\Birinci novbe\Desktop\PusTask\PustokMVC\
+build_property.ProjectDir = C:\Users\Rashad\Desktop\PusTask\PustokMVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Birinci novbe\Desktop\PusTask\PustokMVC
+build_property.MSBuildProjectDirectory = C:\Users\Rashad\Desktop\PusTask\PustokMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Blog/Create.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Blog/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmxvZ1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Blog/Index.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Blog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Category/Create.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Category/Index.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Category/Update.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Category/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Product/Create.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Product/Index.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Product/Update.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Product/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Slider/Create.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Slider/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Slider/Index.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Slider/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Slider/Update.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Slider/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Tag/Create.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Tag/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFnXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Tag/Index.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/Tag/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGFnXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Views/Auth/Login.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Views/Auth/Register.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Views/Home/Index.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Views/Shared/Components/Basket/Default.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Views/Shared/Components/Basket/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmFza2V0XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Views/Shared/Components/Product/Default.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Views/Shared/Components/Product/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvZHVjdFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Views/Shared/Components/Slider/Default.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Views/Shared/Components/Slider/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2xpZGVyXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Views/Shared/_Layout.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Views/_ViewImports.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Birinci novbe/Desktop/PusTask/PustokMVC/Views/_ViewStart.cshtml]
+[C:/Users/Rashad/Desktop/PusTask/PustokMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

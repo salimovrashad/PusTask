@@ -50,15 +50,49 @@ namespace PustokMVC.Controllers
 
 
 
-
-
-
-
-
-
         public IActionResult Login()
         {
             return View();
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> Login(LoginVM vm)
+        {
+            AppUser user;
+            if (vm.UsernameOrEmail.Contains("@")) 
+            { 
+                user = await _userManager.FindByEmailAsync(vm.UsernameOrEmail);
+            }
+            else
+            {
+                user = await _userManager.FindByNameAsync(vm.UsernameOrEmail);
+            }
+            if (user == null)
+            {
+                ModelState.AddModelError("", "Username or password wrong!");
+                return View(vm);
+            }
+            var result = await _signInManager.PasswordSignInAsync(user, vm.Password, vm.IsRemember, true);
+            if (!result.Succeeded)
+            {
+                if (result.IsLockedOut)
+                {
+                    ModelState.AddModelError("", "Too many attempts wait until" + user.LockoutEnd);
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Username or password wrong!");
+                }
+                return View(vm);
+            }
+            return RedirectToAction("Index","Home");
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index","Home");
         }
     }
 }
