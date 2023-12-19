@@ -15,10 +15,6 @@ namespace PustokMVC.Controllers
             _userManager = userManager;
         }
 
-
-
-
-
         public IActionResult Register()
         {
             return View();
@@ -47,8 +43,6 @@ namespace PustokMVC.Controllers
             }
             return View();
         }
-
-
 
         public IActionResult Login()
         {
@@ -93,6 +87,12 @@ namespace PustokMVC.Controllers
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index","Home");
+        }
+
+
+        public IActionResult Profile()
+        {
+            return View();
         }
     }
 }
