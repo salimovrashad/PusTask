@@ -739,3 +739,8 @@ C:\Users\Birinci Novbe\Desktop\PusTask\PustokMVC\obj\Debug\net6.0\refint\PustokM
 C:\Users\Birinci Novbe\Desktop\PusTask\PustokMVC\obj\Debug\net6.0\PustokMVC.pdb
 C:\Users\Birinci Novbe\Desktop\PusTask\PustokMVC\obj\Debug\net6.0\PustokMVC.genruntimeconfig.cache
 C:\Users\Birinci Novbe\Desktop\PusTask\PustokMVC\obj\Debug\net6.0\ref\PustokMVC.dll
+C:\Users\Birinci novbe\Desktop\PusTask\PustokMVC\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Birinci novbe\Desktop\PusTask\PustokMVC\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Birinci novbe\Desktop\PusTask\PustokMVC\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Birinci novbe\Desktop\PusTask\PustokMVC\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Birinci novbe\Desktop\PusTask\PustokMVC\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

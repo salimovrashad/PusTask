@@ -329,8 +329,8 @@
                             <div class="main-navigation flex-lg-right">
                                 <div class="cart-widget">
                                     <div class="login-block">
-                                        <a href="login-register.html" class="font-weight-bold">Login</a> <br>
-                                        <span>or</span><a href="login-register.html">Register</a>
+                                        <a asp-action="Login" asp-controller="Auth" class="font-weight-bold">Login</a> <br>
+                                        <span>or</span><a asp-action="Register" asp-controller="Auth">Register</a>
                                     </div>
                                     @await Component.InvokeAsync("Basket")
                                 </div>

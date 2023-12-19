@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using PustokMVC.Models;
 
 namespace PustokMVC.Context
 {
-    public class PustokDBContext : DbContext
+    public class PustokDBContext : IdentityDbContext
     {
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -11,6 +12,7 @@ namespace PustokMVC.Context
         public DbSet<Tag> Tags { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Setting> Settings { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
         public PustokDBContext(DbContextOptions opt) : base(opt) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
