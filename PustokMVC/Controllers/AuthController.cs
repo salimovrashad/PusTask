@@ -89,10 +89,30 @@ namespace PustokMVC.Controllers
             return RedirectToAction("Index","Home");
         }
 
+		public async Task<IActionResult> Profile()
+		{
+			var user = await _userManager.FindByNameAsync(User.Identity.Name);
 
-        public IActionResult Profile()
+            UpdateVM update = new UpdateVM
+            {
+                Email = user.Email,
+                Fullname = user.Fullname,
+                Username = user.UserName
+            };
+			return View(update);
+		}
+
+        [HttpPost]
+
+        public async Task<IActionResult> Profile(UpdateVM vm)
         {
-            return View();
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            user.Email = vm.Email;
+            user.Fullname = vm.Fullname;
+            user.UserName = vm.Username;
+
+			await _userManager.UpdateAsync(user);
+			return RedirectToAction("Profile","Auth");
         }
     }
 }

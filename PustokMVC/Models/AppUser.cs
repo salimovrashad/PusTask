@@ -5,7 +5,7 @@ namespace PustokMVC.Models;
 
 public class AppUser : IdentityUser
 {
-    public string Fullname { get; set; }
+    public string? Fullname { get; set; }
     public string? ProfileImageUrl { get; set; }
     [NotMapped]
     public override string PhoneNumber { get => base.PhoneNumber; set => base.PhoneNumber = value; }

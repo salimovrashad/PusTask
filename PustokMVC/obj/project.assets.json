@@ -10865,23 +10865,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rashad\\.nuget\\packages\\": {},
+    "C:\\Users\\Birinci novbe\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\PustokMVC.csproj",
+      "projectUniqueName": "C:\\Users\\Birinci novbe\\Desktop\\PusTask\\PustokMVC\\PustokMVC.csproj",
       "projectName": "PustokMVC",
-      "projectPath": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\PustokMVC.csproj",
-      "packagesPath": "C:\\Users\\Rashad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rashad\\Desktop\\PusTask\\PustokMVC\\obj\\",
+      "projectPath": "C:\\Users\\Birinci novbe\\Desktop\\PusTask\\PustokMVC\\PustokMVC.csproj",
+      "packagesPath": "C:\\Users\\Birinci novbe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Birinci novbe\\Desktop\\PusTask\\PustokMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Rashad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Birinci novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10890,6 +10890,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10954,7 +10955,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
