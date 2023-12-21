@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PustokMVC.Context;
+using PustokMVC.ExternalServices.Implements;
+using PustokMVC.ExternalServices.Interfaces;
 using PustokMVC.Helpers;
 using PustokMVC.Models;
 
@@ -16,6 +18,7 @@ builder.Services.AddDbContext<PustokDBContext>(options =>
     options.SignIn.RequireConfirmedEmail = false;
 }).AddDefaultTokenProviders().AddEntityFrameworkStores<PustokDBContext>();
 
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<LayoutService>();
 
 builder.Services.AddSession();
